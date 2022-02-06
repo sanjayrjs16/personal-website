@@ -26,38 +26,40 @@ const Projects = () => {
       <Heading mb={4} textAlign={"center"}>
         Projects
       </Heading>
-      <Container>
-        <Flex justifyContent={"center"}>
-          <Box>
-            <Project
-              title="Picturama"
-              description="Financing independent cinema through defi"
-              image={"./picturama.png"}
-              gitLink="https://github.com/picturama-defi"
-              ytLink="https://www.youtube.com/watch?v=mnrl5tAp7eE"
-              devPostLink="https://devpost.com/software/picturama-defi-financing-independent-cinema"
-            />
-          </Box>
-          <Box>
-            <Project
-              title="CoronaSafe Chatbot"
-              description="Chatbot for Coronasafe Network"
-              image={"./Coronasafe-logo.png"}
-              gitLink="https://github.com/coronasafe/bot"
-              ytLink="https://www.youtube.com/watch?v=A81YflXaZKQ"
-            />
-          </Box>
-          <Box>
-            <Project
-              title="SpaceX dashboard"
-              description="Dashboard for spaceX states"
-              image={"./spaceX.jpg"}
-              gitLink="https://github.com/sanjayrjs16/spaceX-dashboard-react"
-              projectLink="https://thespacexdashboard.netlify.app/launches"
-            />
-          </Box>
-        </Flex>
-      </Container>
+
+      <Flex
+        justifyContent={"center"}
+        flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
+      >
+        <Box>
+          <Project
+            title="Picturama"
+            description="Financing independent cinema through defi"
+            image={"./picturama.png"}
+            gitLink="https://github.com/picturama-defi"
+            ytLink="https://www.youtube.com/watch?v=mnrl5tAp7eE"
+            devPostLink="https://devpost.com/software/picturama-defi-financing-independent-cinema"
+          />
+        </Box>
+        <Box>
+          <Project
+            title="CoronaSafe Chatbot"
+            description="Chatbot for Coronasafe Network"
+            image={"./Coronasafe-logo.png"}
+            gitLink="https://github.com/coronasafe/bot"
+            ytLink="https://www.youtube.com/watch?v=A81YflXaZKQ"
+          />
+        </Box>
+        <Box>
+          <Project
+            title="SpaceX dashboard"
+            description="Dashboard for spaceX states"
+            image={"./spaceX.jpg"}
+            gitLink="https://github.com/sanjayrjs16/spaceX-dashboard-react"
+            projectLink="https://thespacexdashboard.netlify.app/launches"
+          />
+        </Box>
+      </Flex>
     </>
   );
 };

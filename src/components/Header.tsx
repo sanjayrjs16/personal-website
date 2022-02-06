@@ -32,6 +32,7 @@ const Header = () => {
       background="black"
       className={styles.headerFlex}
       justifyContent={"space-around"}
+      flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
     >
       <Flex justifyContent={"space-around"}>
         <Flex
@@ -86,11 +87,13 @@ const Header = () => {
             </a>
           </Square>
         </Flex>
-        <Box marginLeft={"4rem"}>
-          <Heading mb={4}>
-            Hi, I&#x27;m<span className={styles.animateCharcter}> Sanjay</span>
+        <Box marginLeft={["1rem", "2rem", "3rem", "5rem"]}>
+          <Heading mb={4} size="xl">
+            Hi, I&#x27;m
           </Heading>
-
+          <Heading mb={4} fontSize={["1rem", "2rem", "3rem", "5rem"]}>
+            <span className={styles.animateCharcter}> Sanjay</span>
+          </Heading>
           <Text fontSize="4xl">
             I&#x27;m a web developer building with React & Node.
           </Text>
@@ -107,9 +110,9 @@ const Header = () => {
         <Box borderRadius={"100%"}>
           <Img
             borderRadius="full"
-            boxSize="350px"
+            boxSize="20rem"
             src={"./sanjay.jpeg"}
-            alt="Dan Abramov"
+            alt="Sanjay Rajesh"
           />
         </Box>
       </Flex>

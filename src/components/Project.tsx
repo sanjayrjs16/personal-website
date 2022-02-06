@@ -31,7 +31,12 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <Box className={styles.sliderThumb}>
-      <Flex direction={"column"} alignContent={"center"} alignItems={"center"}>
+      <Flex
+        direction={"column"}
+        alignContent={"center"}
+        alignItems={"center"}
+        pb={"9rem"}
+      >
         <Img borderRadius="full" boxSize="100px" src={image} alt={title} />
         <Heading mb={4}>{title}</Heading>
         <Text fontSize="xl">{description}</Text>
