@@ -88,18 +88,18 @@ const Header = () => {
         </Flex>
         <Box marginLeft={"4rem"}>
           <Heading mb={4}>
-            Hi, I`&aposm<span className={styles.animateCharcter}> Sanjay</span>
+            Hi, I&#x27;m<span className={styles.animateCharcter}> Sanjay</span>
           </Heading>
 
           <Text fontSize="4xl">
-            I`&aposm a web developer building with React & Node.
+            I&#x27;m a web developer building with React & Node.
           </Text>
           <Text fontSize="3xl">
             Currently exploring web3 world esp NFTs & De-Fi.
           </Text>
           <Text fontSize="3xl">
-            I`&aposm trying to do my part in building the &quotInternet of
-            value&quot
+            I&#x27;m trying to do my part in building the &quot;Internet of
+            value&quot;
           </Text>
         </Box>
       </Flex>

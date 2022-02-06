@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <footer className={styles.footer}>
         <Box>
           <Text fontSize="2xl" textAlign={"center"}>
-            I am also a hobbyist digital artist. While you&aposre here, check
+            I am also a hobbyist digital artist. While you&#x27;re here, check
             out a few of my works :)
           </Text>
           <a
