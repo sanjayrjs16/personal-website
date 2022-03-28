@@ -33,6 +33,13 @@ const Experience = () => {
           justifyContent={"space-between"}
           alignContent="center"
           mb={"2rem"}
+          style={{
+            // width: 0,
+            // height: 0,
+            borderLeft: "25px solid transparent",
+            borderRight: "25px solid transparent",
+            borderTop: "50px solid #555",
+          }}
         >
           <Heading as="h3" fontSize="2xl" mb={"0.8rem"}>
             🏢 Tata Consultancy Services
