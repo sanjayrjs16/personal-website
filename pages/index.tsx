@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import Experience from "../src/components/experience";
 import Header from "../src/components/Header";
 import Projects from "../src/components/Projects";
 import Blogs from "../src/components/Blogs";

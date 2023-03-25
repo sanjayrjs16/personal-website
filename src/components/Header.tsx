@@ -3,7 +3,7 @@ import React from "react";
 import profilePic from "../../public/sanjay.jpeg";
 import avatar from "../../public/avatar.png";
 import styles from "../../styles/Home.module.css";
-import { HStack, useTheme } from "@chakra-ui/react";
+import { Center, HStack, useTheme } from "@chakra-ui/react";
 
 import {
   Container,
@@ -16,6 +16,7 @@ import {
   Image,
   useColorModeValue,
   Link,
+  Button,
 } from "@chakra-ui/react";
 
 import {
@@ -28,18 +29,18 @@ import {
 } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
-import {
-  Github,
-  Instagram,
-  Twitter,
-  Email,
-  LinkedIn,
-  YouTube,
-  StackOverFlow,
-} from "../assets/socials/socialMediaIcons";
-
 const Header = () => {
   const theme = useTheme();
+  function downloadResume() {
+    const a = document.createElement("a");
+    const url = "./Sanjay_R_Resume.pdf";
+    a.href = url;
+    // @ts-ignore
+    a.download = url.split("/").pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
   return (
     <Container maxW={"7xl"}>
       <Stack
@@ -71,6 +72,7 @@ const Header = () => {
             align="center"
             justify="space-around"
             direction={{ base: "row", md: "row" }}
+            wrap={"wrap"}
           >
             <Link href="mailto:sanjay.rajesh1@outlook.com">
               <IconButton
@@ -129,7 +131,10 @@ const Header = () => {
                 isRound
               />
             </Link>
-            <Link href="https://www.linkedin.com/in/sanjay-rajesh/">
+            <Link
+              href="https://www.linkedin.com/in/sanjay-rajesh/"
+              target={"_blank"}
+            >
               <IconButton
                 aria-label="linkedin"
                 variant="ghost"
@@ -156,67 +161,9 @@ const Header = () => {
               />
             </Link>
           </Stack>
-
-          {/* <Stack
-            spacing={{ base: 4, sm: 6 }}
-            direction={{ base: "column", sm: "row" }}
-          >
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="mailto:sanjay.rajesh@outlook.com"
-              >
-                <Email />
-              </a>
-            </Square>
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://github.com/sanjayrjs16"
-              >
-                <Github />
-              </a>
-            </Square>
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://stackoverflow.com/users/11468488/sanjay"
-              >
-                <StackOverFlow />
-              </a>
-            </Square>
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/sanjay-rajesh/"
-              >
-                <LinkedIn />
-              </a>
-            </Square>
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/sanjayrjs"
-              >
-                <Twitter />
-              </a>
-            </Square>
-
-            <Square bg="white" size="50px" borderRadius={"60px"}>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.instagram.com/sanjay.rjs/"
-              >
-                <Instagram />
-              </a>
-            </Square>
-          </Stack> */}
+          <Center>
+            <Button onClick={downloadResume}>Download resume</Button>
+          </Center>
         </Stack>
         <Flex
           flex={1}
