@@ -14,11 +14,22 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Sanjay Rajesh</title>
+        <title>Sanjay Rajesh - Frontend Engineer</title>
         <meta
           name="description"
-          content="Personal portfolio of Sanjay Rajesh - frontend developer."
+          content="Sanjay Rajesh - Software Engineer specialising in  frontend engineering. TechStack React.js, Next.js, JavaScript, TypeScript, GraphQL, Jenkins, Docker, Git
+          Experience building applications as per business requirements ensuring industry technical standards are met. 
+          loves to teach and share learning through technical content writing and YouTube videos."
         />
+        <meta property="og:title" content="Sanjay Rajesh - Frontend Engineer" />
+        <meta
+          property="og:description"
+          content="I am a frontend engineer with a focus on creating responsive, user-friendly web applications."
+        />
+        <meta property="og:image" content="./avatar.png" />
+
+        <link rel="canonical" href="https://sanjayrjs.vercel.app/"></link>
+        <meta name="robots" content="index, follow"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
