@@ -124,7 +124,13 @@ const Project = ({
           >
             {techUsed?.map((item: string) => {
               return (
-                <Badge px={2} py={1} bg={"gray.50"} fontWeight={"400"}>
+                <Badge
+                  key={item}
+                  px={2}
+                  py={1}
+                  bg={"gray.50"}
+                  fontWeight={"400"}
+                >
                   {item}
                 </Badge>
               );
