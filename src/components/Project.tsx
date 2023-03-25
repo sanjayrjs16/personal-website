@@ -17,6 +17,17 @@ import {
 import { LinkIcon } from "@chakra-ui/icons";
 import styles from "../../styles/Home.module.css";
 import { Github, YouTube } from "../assets/socials/socialMediaIcons";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsPerson,
+  BsStackOverflow,
+  BsTwitter,
+  BsYoutube,
+  BsLink,
+} from "react-icons/bs";
+import { MdEmail, MdOutlineEmail } from "react-icons/md";
+
 interface ProjectProps {
   title: string;
   description: string;
@@ -44,7 +55,7 @@ const Project = ({
           maxW={"330px"}
           minW={"320px"}
           w={"full"}
-          bg={useColorModeValue("white", "gray.900")}
+          bg={"white"}
           boxShadow={"2xl"}
           rounded={"lg"}
           p={6}
@@ -77,56 +88,29 @@ const Project = ({
             {title}
           </Heading>
 
-          <Text
-            textAlign={"center"}
-            color={useColorModeValue("gray.700", "gray.400")}
-            px={3}
-          >
+          <Text textAlign={"center"} color={"gray.700"} px={3}>
             {description}
           </Text>
 
           <Stack align={"center"} justify={"center"} direction={"row"} mt={6}>
             {gitLink && (
-              <Badge
-                px={2}
-                py={1}
-                bg={useColorModeValue("gray.50", "gray.800")}
-                fontWeight={"400"}
-              >
+              <Badge px={2} py={1} bg={"gray.50"} fontWeight={"400"}>
                 <a target={"_blank"} rel="noreferrer" href={gitLink}>
-                  <Github />
+                  <BsGithub size="32px" />
                 </a>
               </Badge>
             )}
             {ytLink && (
-              <Badge
-                px={2}
-                py={1}
-                bg={useColorModeValue("gray.50", "gray.800")}
-                fontWeight={"400"}
-              >
+              <Badge px={2} py={1} bg={"gray.50"} fontWeight={"400"}>
                 <a target={"_blank"} rel="noreferrer" href={ytLink}>
-                  <YouTube />
+                  <BsYoutube size="32px" />
                 </a>
               </Badge>
             )}
             {projectLink && (
-              <Badge
-                px={2}
-                py={1}
-                bg={useColorModeValue("gray.50", "gray.800")}
-                fontWeight={"400"}
-              >
+              <Badge px={2} py={1} bg={"gray.50"} fontWeight={"400"}>
                 <a target={"_blank"} rel="noreferrer" href={projectLink}>
-                  {" "}
-                  {/* <Img
-                    borderRadius="full"
-                    boxSize="50px"
-                    src={"./link.png"}
-                    alt={title}
-                    margin={"0.1rem"}
-                  /> */}
-                  <LinkIcon />
+                  <BsLink size="32px" />
                 </a>
               </Badge>
             )}
@@ -140,12 +124,7 @@ const Project = ({
           >
             {techUsed?.map((item: string) => {
               return (
-                <Badge
-                  px={2}
-                  py={1}
-                  bg={useColorModeValue("gray.50", "gray.800")}
-                  fontWeight={"400"}
-                >
+                <Badge px={2} py={1} bg={"gray.50"} fontWeight={"400"}>
                   {item}
                 </Badge>
               );

@@ -4,17 +4,6 @@ import profilePic from "../../public/sanjay.jpeg";
 import avatar from "../../public/avatar.png";
 import styles from "../../styles/Home.module.css";
 import { HStack, useTheme } from "@chakra-ui/react";
-// import {
-//   Flex,
-//   Spacer,
-//   Text,
-//   Center,
-//   Square,
-//   Box,
-//   Heading,
-//   Circle,
-//   Container,
-// } from "@chakra-ui/react";
 
 import {
   Container,
@@ -23,16 +12,10 @@ import {
   Box,
   Heading,
   Text,
-  Button,
-  Icon,
   IconButton,
   Image,
-  createIcon,
-  IconProps,
   useColorModeValue,
-  Square,
   Link,
-  Tooltip,
 } from "@chakra-ui/react";
 
 import {

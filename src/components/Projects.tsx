@@ -12,14 +12,6 @@ import {
 import styles from "../../styles/Home.module.css";
 import Project from "./Project";
 
-import {
-  Github,
-  Instagram,
-  Twitter,
-  Email,
-  LinkedIn,
-  YouTube,
-} from "../assets/socials/socialMediaIcons";
 const Projects = () => {
   return (
     <>
