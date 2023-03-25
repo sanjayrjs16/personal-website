@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   Box,
   chakra,
@@ -8,11 +9,12 @@ import {
   useColorModeValue,
   Link,
   Flex,
+  Text,
 } from "@chakra-ui/react";
 
 function StatsCard({ title, stat }) {
   return (
-    <Stat
+    <Flex
       px={{ base: 4, md: 8 }}
       py={"5"}
       shadow={"xl"}
@@ -20,16 +22,18 @@ function StatsCard({ title, stat }) {
       borderColor={"black.500"}
       rounded={"lg"}
       alignItems={"center"}
-      alignContent={"stretch"}
+      alignContent={"space-evenly"}
       alignSelf={"stretch"}
+      justifyContent={"space-evenly"}
+      flexDirection={"column"}
     >
-      <StatLabel fontSize={"lg"} fontWeight={"medium"} isTruncated>
+      <Text fontSize={"lg"} fontWeight={"medium"} isTruncated>
         {title}
-      </StatLabel>
-      <StatNumber fontSize={"2xl"} fontWeight={"medium"} maxW={"300px"}>
+      </Text>
+      <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"300px"}>
         {stat}
-      </StatNumber>
-    </Stat>
+      </Text>
+    </Flex>
   );
 }
 
@@ -44,7 +48,11 @@ export default function Blogs() {
       >
         Blogs
       </chakra.h1>
-      <Flex justifyContent={"space-evenly"} alignItems={"stretch"}>
+      <Flex
+        justifyContent={"space-evenly"}
+        alignItems={"stretch"}
+        flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
+      >
         <Link href="https://medium.com/@sanjayrjs16">
           <StatsCard
             title={"Medium"}

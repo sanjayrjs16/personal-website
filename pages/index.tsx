@@ -41,24 +41,18 @@ const Home: NextPage = () => {
               color={"gray.800"}
               w={91}
               position={"absolute"}
-              right={-71}
-              top={"190px"}
+              right={-51}
+              top={"200px"}
             />
+            <Heading mb={4} textAlign={"center"}>
+              Art works
+            </Heading>
+
             <Text
               fontSize={"4xl"}
               fontFamily={"Caveat"}
               position={"absolute"}
-              right={"-315px"}
-              top={"125px"}
-              transform={"rotate(10deg)"}
-            >
-              Few of my Artworks :)
-            </Text>
-            <Text
-              fontSize={"4xl"}
-              fontFamily={"Caveat"}
-              position={"absolute"}
-              right={"-85px"}
+              right={"-39px"}
               top={"145px"}
               transform={"rotate(10deg)"}
             >
