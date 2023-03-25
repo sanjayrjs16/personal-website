@@ -6,9 +6,10 @@ import styles from "../styles/Home.module.css";
 import Experience from "../src/components/experience";
 import Header from "../src/components/Header";
 import Projects from "../src/components/Projects";
-import Link from "next/link";
-import { Heading, Box, Text } from "@chakra-ui/react";
 import Blogs from "../src/components/Blogs";
+
+import { Heading, Box, Text } from "@chakra-ui/react";
+
 import { Icon, createIcon } from "@chakra-ui/react";
 const Home: NextPage = () => {
   return (
