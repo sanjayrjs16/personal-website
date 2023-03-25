@@ -41,8 +41,8 @@ const Home: NextPage = () => {
               color={"gray.800"}
               w={91}
               position={"absolute"}
-              right={-51}
-              top={"200px"}
+              right={-19}
+              top={"99px"}
             />
             <Heading mb={4} textAlign={"center"}>
               Art works
@@ -52,8 +52,8 @@ const Home: NextPage = () => {
               fontSize={"4xl"}
               fontFamily={"Caveat"}
               position={"absolute"}
-              right={"-39px"}
-              top={"145px"}
+              right={"-9px"}
+              top={"50px"}
               transform={"rotate(10deg)"}
             >
               *click
