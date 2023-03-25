@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               w={91}
               position={"absolute"}
               right={-19}
-              top={"99px"}
+              top={"119px"}
             />
             <Heading mb={4} textAlign={"center"}>
               Art works
