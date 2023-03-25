@@ -21,11 +21,11 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.gradientBackground}>
+      <main>
         <Header />
         <Projects />
 
-        <Experience />
+        {/* <Experience /> */}
       </main>
       <footer className={styles.footer}>
         <Box>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
           <a
             target={"_blank"}
             rel="noreferrer"
-            href={"https://www.instagram.com/san_jay.r_/"}
+            href={"https://www.instagram.com/sanjay.rjs/"}
           >
             <>
               <Box

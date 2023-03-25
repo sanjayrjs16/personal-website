@@ -28,37 +28,47 @@ const Projects = () => {
       </Heading>
 
       <Flex
-        justifyContent={"center"}
+        justifyContent={"space-around"}
         flexWrap={["wrap", "wrap", "wrap", "nowrap"]}
+        alignItems={"stretch"}
       >
-        <Box>
-          <Project
-            title="Picturama"
-            description="Financing independent cinema through defi"
-            image={"./picturama.png"}
-            gitLink="https://github.com/picturama-defi"
-            ytLink="https://www.youtube.com/watch?v=mnrl5tAp7eE"
-            devPostLink="https://devpost.com/software/picturama-defi-financing-independent-cinema"
-          />
-        </Box>
-        <Box>
-          <Project
-            title="CoronaSafe Chatbot"
-            description="Chatbot for Coronasafe Network"
-            image={"./Coronasafe-logo.png"}
-            gitLink="https://github.com/coronasafe/bot"
-            ytLink="https://www.youtube.com/watch?v=A81YflXaZKQ"
-          />
-        </Box>
-        <Box>
-          <Project
-            title="SpaceX dashboard"
-            description="Dashboard for spaceX states"
-            image={"./spaceX.jpg"}
-            gitLink="https://github.com/sanjayrjs16/spaceX-dashboard-react"
-            projectLink="https://thespacexdashboard.netlify.app/launches"
-          />
-        </Box>
+        <Project
+          title="Picturama"
+          description="Financing independent cinema through defi"
+          image={"./picturama.png"}
+          gitLink="https://github.com/picturama-defi"
+          ytLink="https://www.youtube.com/watch?v=mnrl5tAp7eE"
+          devPostLink="https://devpost.com/software/picturama-defi-financing-independent-cinema"
+          techUsed={["solidity", "node-express", "Next"]}
+        />
+
+        <Project
+          title="CoronaSafe Chatbot"
+          description="Chatbot for Coronasafe Network"
+          image={"./Coronasafe-logo.png"}
+          gitLink="https://github.com/coronasafe/bot"
+          ytLink="https://www.youtube.com/watch?v=A81YflXaZKQ"
+          techUsed={["Rasa", "Heroku", "Docker", "Github actions"]}
+        />
+
+        <Project
+          title="SpaceX dashboard"
+          description="Dashboard for spaceX stats"
+          image={"./spaceX.jpg"}
+          gitLink="https://github.com/sanjayrjs16/spaceX-dashboard-react"
+          projectLink="https://thespacexdashboard.netlify.app/launches"
+          techUsed={["React-query", "Baseweb-UI"]}
+        />
+
+        <Project
+          title="Solana Faucet"
+          description="Faucet to recieve Solana airdrops on BlockChain test/devnet"
+          image={"./Solana_logo.png"}
+          gitLink="https://github.com/sanjayrjs16/solana-dev-faucet"
+          projectLink="https://stardust-solana-faucet.vercel.app/"
+          ytLink="https://www.youtube.com/watch?v=SNEyD8Kn9Xk"
+          techUsed={["Phantom", "Next", "web3js"]}
+        />
       </Flex>
     </>
   );
