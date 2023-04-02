@@ -1,7 +1,5 @@
 import React from "react";
-// import Image from "next/image";
-import profilePic from "../../public/sanjay.jpeg";
-import avatar from "../../public/avatar.png";
+
 import styles from "../../styles/Home.module.css";
 import { Center, HStack, useTheme } from "@chakra-ui/react";
 
@@ -33,7 +31,7 @@ const Header = () => {
   const theme = useTheme();
   function downloadResume() {
     const a = document.createElement("a");
-    const url = "./Sanjay_R_Resume.pdf";
+    const url = "./Sanjay_Rajesh_Resume_2023.pdf";
     a.href = url;
     // @ts-ignore
     a.download = url.split("/").pop();
@@ -181,7 +179,7 @@ const Header = () => {
             overflow={"hidden"}
           >
             <Image
-              alt={"Hero Image"}
+              alt={"Sanjay Rajesh Image"}
               fit={"contain"}
               align={"center"}
               w={"100%"}

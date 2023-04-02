@@ -31,7 +31,7 @@ const Projects = () => {
           gitLink="https://github.com/picturama-defi"
           ytLink="https://www.youtube.com/watch?v=mnrl5tAp7eE"
           devPostLink="https://devpost.com/software/picturama-defi-financing-independent-cinema"
-          techUsed={["solidity", "node-express", "Next"]}
+          techUsed={["solidity", "node-express", "Next.js"]}
         />
 
         <Project
@@ -41,6 +41,13 @@ const Projects = () => {
           gitLink="https://github.com/coronasafe/bot"
           ytLink="https://www.youtube.com/watch?v=A81YflXaZKQ"
           techUsed={["Rasa", "Heroku", "Docker", "Github actions"]}
+        />
+        <Project
+          title="Co-Draw - (WIP) "
+          description="Collborative drawing/designing for building quick designs together"
+          image={"./devpost.jpg"}
+          gitLink="https://github.com/sanjayrjs16/co-draw"
+          techUsed={["Next.js", "node-express", "Fabric.js", "Socket.io"]}
         />
         <Project
           title="Solana Faucet"
