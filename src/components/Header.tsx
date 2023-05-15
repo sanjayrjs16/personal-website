@@ -31,7 +31,7 @@ const Header = () => {
   const theme = useTheme();
   function downloadResume() {
     const a = document.createElement("a");
-    const url = "./Sanjay_Rajesh_Resume_2023.pdf";
+    const url = "./Sanjay_Rajesh_Resume_2023_.pdf";
     a.href = url;
     // @ts-ignore
     a.download = url.split("/").pop();
